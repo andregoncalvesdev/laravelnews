@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "andregoncalvesdev\\laravelnews\\": "src"
+            "AndreGoncalvesDev\\LaravelNews\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "andregoncalvesdev\\laravelnews\\": "tests"
+            "AndreGoncalvesDev\\LaravelNews\\": "tests"
         }
     },
     "config": {
