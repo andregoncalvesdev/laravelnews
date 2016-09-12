@@ -4,7 +4,7 @@ namespace AndreGoncalvesDev\LaravelNews\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class News extends Model implements SluggableInterface
+class News extends Model
 {
   /**
    * The database table used by the model.
@@ -65,7 +65,7 @@ class News extends Model implements SluggableInterface
   /**
    * Get all news
    */
-   public function getAll() {
+   public static function getAll() {
      return News::all();
    }
 }
