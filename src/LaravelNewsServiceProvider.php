@@ -1,6 +1,6 @@
 <?php
 
-namespace andregoncalvesdev\laravelnews;
+namespace AndreGoncalvesDev\LaravelNews;
 
 use Illuminate\Support\ServiceProvider;
 
