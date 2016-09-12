@@ -16,7 +16,7 @@ class LaravelNewsServiceProvider extends ServiceProvider
     $this->loadViewsFrom(base_path('resources/views'), 'laravelnews');
 
     $this->publishes([
-      __DIR__.'/view' => base_path('resources/views')
+      __DIR__.'/views' => base_path('resources/views')
     ]);
 
     $this->publishes([
