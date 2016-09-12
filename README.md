@@ -5,7 +5,7 @@
 Via Composer
 
 ``` bash
-"andregoncalvesdev/News": "0.1.*"
+"andregoncalvesdev/laravelnews": "0.1.*"
 ```
 
 ## Usage
