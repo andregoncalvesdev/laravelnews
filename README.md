@@ -9,6 +9,8 @@ Via Composer
 ```
 
 ## Usage
+Then add the service provider in config/app.php:
+AndreGoncalvesDev\LaravelNews\LaravelNewsServiceProvider::class,
 
 ``` php
 php artisan vendor:publish
