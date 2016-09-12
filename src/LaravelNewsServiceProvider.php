@@ -16,11 +16,11 @@ class LaravelNewsServiceProvider extends ServiceProvider
     $this->loadViewsFrom(base_path('resources/views'), 'laravelnews');
 
     $this->publishes([
-      __DIR__.'/view' => base_path('resources/views');
+      __DIR__.'/view' => base_path('resources/views')
     ]);
 
     $this->publishes([
-      __DIR__.'/migrations' => database_path('migrations');
+      __DIR__.'/migrations' => database_path('migrations')
     ], 'migrations');
   }
 
