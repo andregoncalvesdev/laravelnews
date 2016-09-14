@@ -4,10 +4,12 @@ namespace AndreGoncalvesDev\LaravelNews\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
+use Dimsav\Translatable\Translatable;
 
 class News extends Model
 {
   use Sluggable;
+  use Translatable;
 
   /**
    * The database table used by the model.
@@ -42,6 +44,8 @@ class News extends Model
     'text',
     'gallery'
   ];
+
+  public $translatedAttributes = ['title', 'summary', 'text'];
 
   /**
    * The accessors to append to the model's array form.
