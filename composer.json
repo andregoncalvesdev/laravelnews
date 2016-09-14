@@ -17,6 +17,7 @@
     "require": {
         "php": "~5.6|~7.0",
         "cviebrock/eloquent-sluggable": "^4.0",
+        "dimsav/laravel-translatable": "^6.0",
         "illuminate/support": "~5.1"
     },
     "require-dev": {

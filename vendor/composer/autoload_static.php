@@ -44,6 +44,7 @@ class ComposerStaticInite35b86feeecdb0a2bad07ab92a33efe8
         'D' => 
         array (
             'Doctrine\\Instantiator\\' => 22,
+            'Dimsav\\Translatable\\' => 20,
             'DeepCopy\\' => 9,
         ),
         'C' => 
@@ -128,6 +129,10 @@ class ComposerStaticInite35b86feeecdb0a2bad07ab92a33efe8
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
+        ),
+        'Dimsav\\Translatable\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dimsav/laravel-translatable/src/Translatable',
         ),
         'DeepCopy\\' => 
         array (
@@ -215,6 +220,26 @@ class ComposerStaticInite35b86feeecdb0a2bad07ab92a33efe8
     );
 
     public static $classMap = array (
+        'AddSeeds' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/migrations/2014_02_02_181020_add_seeds.php',
+        'CreateTables' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/migrations/2013_11_28_152610_create_tables.php',
+        'Dimsav\\Translatable\\Test\\Model\\City' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/City.php',
+        'Dimsav\\Translatable\\Test\\Model\\CityTranslation' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/CityTranslation.php',
+        'Dimsav\\Translatable\\Test\\Model\\Company' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/Company.php',
+        'Dimsav\\Translatable\\Test\\Model\\Continent' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/Continent.php',
+        'Dimsav\\Translatable\\Test\\Model\\ContinentTranslation' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/ContinentTranslation.php',
+        'Dimsav\\Translatable\\Test\\Model\\Country' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/Country.php',
+        'Dimsav\\Translatable\\Test\\Model\\CountryGuarded' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/CountryGuarded.php',
+        'Dimsav\\Translatable\\Test\\Model\\CountryStrict' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/CountryStrict.php',
+        'Dimsav\\Translatable\\Test\\Model\\CountryTranslation' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/CountryTranslation.php',
+        'Dimsav\\Translatable\\Test\\Model\\CountryTranslationGuarded' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/CountryTranslationGuarded.php',
+        'Dimsav\\Translatable\\Test\\Model\\CountryWithCustomLocaleKey' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/CountryWithCustomLocaleKey.php',
+        'Dimsav\\Translatable\\Test\\Model\\Food' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/Food.php',
+        'Dimsav\\Translatable\\Test\\Model\\FoodTranslation' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/FoodTranslation.php',
+        'Dimsav\\Translatable\\Test\\Model\\Person' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/Person.php',
+        'Dimsav\\Translatable\\Test\\Model\\PersonTranslation' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/PersonTranslation.php',
+        'Dimsav\\Translatable\\Test\\Model\\StrictTranslation' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/StrictTranslation.php',
+        'Dimsav\\Translatable\\Test\\Model\\Vegetable' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/Vegetable.php',
+        'Dimsav\\Translatable\\Test\\Model\\VegetableTranslation' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/models/VegetableTranslation.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
@@ -736,6 +761,7 @@ class ComposerStaticInite35b86feeecdb0a2bad07ab92a33efe8
         'PSR2_Sniffs_Methods_MethodDeclarationSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/PSR2/Sniffs/Methods/MethodDeclarationSniff.php',
         'PSR2_Sniffs_Namespaces_NamespaceDeclarationSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/PSR2/Sniffs/Namespaces/NamespaceDeclarationSniff.php',
         'PSR2_Sniffs_Namespaces_UseDeclarationSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/PSR2/Sniffs/Namespaces/UseDeclarationSniff.php',
+        'ScopesTest' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/ScopesTest.php',
         'SebastianBergmann\\CodeCoverage\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/CodeCoverage.php',
         'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
         'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Driver/Driver.php',
@@ -915,7 +941,10 @@ class ComposerStaticInite35b86feeecdb0a2bad07ab92a33efe8
         'Squiz_Sniffs_WhiteSpace_ScopeKeywordSpacingSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/WhiteSpace/ScopeKeywordSpacingSniff.php',
         'Squiz_Sniffs_WhiteSpace_SemicolonSpacingSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/WhiteSpace/SemicolonSpacingSniff.php',
         'Squiz_Sniffs_WhiteSpace_SuperfluousWhitespaceSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Squiz/Sniffs/WhiteSpace/SuperfluousWhitespaceSniff.php',
+        'TestCoreModelExtension' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/TestCoreModelExtension.php',
+        'TestsBase' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/TestsBase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
+        'TranslatableTest' => __DIR__ . '/..' . '/dimsav/laravel-translatable/tests/TranslatableTest.php',
         'Zend_Sniffs_Debug_CodeAnalyzerSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Zend/Sniffs/Debug/CodeAnalyzerSniff.php',
         'Zend_Sniffs_Files_ClosingTagSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Zend/Sniffs/Files/ClosingTagSniff.php',
         'Zend_Sniffs_NamingConventions_ValidVariableNameSniff' => __DIR__ . '/..' . '/squizlabs/php_codesniffer/CodeSniffer/Standards/Zend/Sniffs/NamingConventions/ValidVariableNameSniff.php',

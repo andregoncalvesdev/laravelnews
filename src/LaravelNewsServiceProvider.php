@@ -32,5 +32,6 @@ class LaravelNewsServiceProvider extends ServiceProvider
   public function register()
   {
       $this->app->register('Cviebrock\EloquentSluggable\ServiceProvider');
+      $this->app->register('Dimsav\Translatable\TranslatableServiceProvider');
   }
 }
