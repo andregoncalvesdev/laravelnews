@@ -3,10 +3,9 @@
 namespace AndreGoncalvesDev\LaravelNews\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Cviebrock\EloquentSluggable\SluggableInterface;
-use Cviebrock\EloquentSluggable\SluggableTrait;
+use Cviebrock\EloquentSluggable\Sluggable;
 
-class News extends Model implements SluggableInterface
+class News extends Model
 {
   use Sluggable;
 
