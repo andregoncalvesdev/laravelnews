@@ -8,7 +8,7 @@ use Cviebrock\EloquentSluggable\SluggableTrait;
 
 class News extends Model implements SluggableInterface
 {
-  use SluggableTrait;
+  use Sluggable;
 
   /**
    * The database table used by the model.
@@ -49,8 +49,7 @@ class News extends Model implements SluggableInterface
    *
    * @var array
    */
-  protected static function boot()
-  {
+  protected static function boot() {
     static::deleted(function ($news) {
       if ($news->gallery) {
         $news->gallery->delete();
@@ -61,9 +60,17 @@ class News extends Model implements SluggableInterface
   /**
    * A News item has an associated gallery
    */
-  public function gallery()
-  {
+  public function gallery() {
     return $this->belongsTo('AndreGoncalvesDev\LaravelNews\Models\Gallery');
+  }
+
+  /**
+   * Return the sluggable configuration array for this model.
+   *
+   * @return array
+   */
+  public function sluggable() {
+      return ['slug' => ['source' => 'title']];
   }
 
   /**
