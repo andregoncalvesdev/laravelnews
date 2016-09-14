@@ -22,6 +22,10 @@ class LaravelNewsServiceProvider extends ServiceProvider
     $this->publishes([
       __DIR__.'/migrations' => database_path('migrations')
     ], 'migrations');
+
+    $configPath = __DIR__ . '/../config/translatable.php';
+    $this->publishes([$configPath => config_path('translatable.php')]);
+    $this->mergeConfigFrom($configPath, 'translatable');
   }
 
   /**
