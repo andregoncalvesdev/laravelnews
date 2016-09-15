@@ -3,12 +3,10 @@
 namespace AndreGoncalvesDev\LaravelNews\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Cviebrock\EloquentSluggable\Sluggable;
 use Dimsav\Translatable\Translatable;
 
 class News extends Model
 {
-  use Sluggable;
   use Translatable;
 
   /**
@@ -34,10 +32,7 @@ class News extends Model
    *
    * @var array
    */
-  protected $visible = [
-    'slug',
-    'gallery'
-  ];
+  protected $visible = ['gallery'];
 
   public $translatedAttributes = ['title', 'summary', 'text'];
 

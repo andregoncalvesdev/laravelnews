@@ -18,6 +18,8 @@ class CreateNewsTranslations extends Migration
         $table->integer('news_id')->unsigned();
         $table->string('locale')->index();
 
+        $table->string('slug')->nullable();
+
         $table->string('title');
         $table->string('summary');
         $table->text('text');
