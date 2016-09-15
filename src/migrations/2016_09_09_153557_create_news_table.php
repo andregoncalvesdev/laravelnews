@@ -17,11 +17,6 @@ class CreateNewsTable extends Migration
       $table->increments('id');
       $table->string('slug')->nullable();
 
-      $table->string('title');
-      $table->string('summary');
-      $table->text('text');
-      $table->string('category');
-
       $table->integer('gallery_id')->unsigned()->nullable();
       $table->foreign('gallery_id')->references('id')->on('gallery');
 

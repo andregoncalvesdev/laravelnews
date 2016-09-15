@@ -24,9 +24,6 @@ class News extends Model
    * @var array
    */
   protected $fillable = [
-    'title',
-    'summary',
-    'text',
     'gallery_id',
     'published_at',
     'category',
@@ -39,9 +36,6 @@ class News extends Model
    */
   protected $visible = [
     'slug',
-    'title',
-    'summary',
-    'text',
     'gallery'
   ];
 
