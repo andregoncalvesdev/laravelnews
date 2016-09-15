@@ -21,7 +21,6 @@ class CreateNewsTranslations extends Migration
         $table->string('title');
         $table->string('summary');
         $table->text('text');
-        $table->string('category');
 
         $table->unique(['news_id','locale']);
         $table->foreign('news_id')->references('id')->on('news')->onDelete('cascade');
