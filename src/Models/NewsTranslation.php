@@ -31,4 +31,13 @@ class NewsTranslation extends Model
   protected $visible = ['slug'];
 
   public $timestamps = false;
+
+  /**
+   * Return the sluggable configuration array for this model.
+   *
+   * @return array
+   */
+  public function sluggable() {
+      return ['slug' => ['source' => 'title']];
+  }
 }
