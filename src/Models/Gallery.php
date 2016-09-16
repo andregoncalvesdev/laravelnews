@@ -2,7 +2,7 @@
 
 namespace AndreGoncalvesDev\LaravelNews\Models;
 
-use namespace AndreGoncalvesDev\LaravelNews\Models\Photo;
+use AndreGoncalvesDev\LaravelNews\Models\Photo;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
